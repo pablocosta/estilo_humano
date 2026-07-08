@@ -1,0 +1,15 @@
+{"time":"2025-06-08T19:41:16.900815962-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/wandb/run-20250608_194116-zs51cpgj/logs/debug-core.log"}
+{"time":"2025-06-08T19:41:17.229497736-03:00","level":"INFO","msg":"stream: created new stream","id":"zs51cpgj"}
+{"time":"2025-06-08T19:41:17.229642019-03:00","level":"INFO","msg":"stream: started","id":"zs51cpgj"}
+{"time":"2025-06-08T19:41:17.229744174-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"zs51cpgj"}
+{"time":"2025-06-08T19:41:17.229764695-03:00","level":"INFO","msg":"handler: started","stream_id":"zs51cpgj"}
+{"time":"2025-06-08T19:41:17.229970449-03:00","level":"INFO","msg":"sender: started","stream_id":"zs51cpgj"}
+{"time":"2025-06-08T19:41:17.498226613-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-08T19:42:59.586483739-03:00","level":"INFO","msg":"stream: closing","id":"zs51cpgj"}
+{"time":"2025-06-08T19:42:59.586568756-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-08T19:42:59.586955406-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-08T19:43:00.70609929-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-08T19:43:02.883710021-03:00","level":"INFO","msg":"handler: closed","stream_id":"zs51cpgj"}
+{"time":"2025-06-08T19:43:02.88380468-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zs51cpgj"}
+{"time":"2025-06-08T19:43:02.883836829-03:00","level":"INFO","msg":"sender: closed","stream_id":"zs51cpgj"}
+{"time":"2025-06-08T19:43:02.884420663-03:00","level":"INFO","msg":"stream: closed","id":"zs51cpgj"}

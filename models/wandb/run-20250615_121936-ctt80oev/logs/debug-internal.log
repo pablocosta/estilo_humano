@@ -1,0 +1,15 @@
+{"time":"2025-06-15T12:19:36.90268197-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/wandb/run-20250615_121936-ctt80oev/logs/debug-core.log"}
+{"time":"2025-06-15T12:19:37.284388967-03:00","level":"INFO","msg":"stream: created new stream","id":"ctt80oev"}
+{"time":"2025-06-15T12:19:37.284510642-03:00","level":"INFO","msg":"stream: started","id":"ctt80oev"}
+{"time":"2025-06-15T12:19:37.284613009-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"ctt80oev"}
+{"time":"2025-06-15T12:19:37.28477994-03:00","level":"INFO","msg":"handler: started","stream_id":"ctt80oev"}
+{"time":"2025-06-15T12:19:37.284699428-03:00","level":"INFO","msg":"sender: started","stream_id":"ctt80oev"}
+{"time":"2025-06-15T12:19:37.70686559-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-15T12:34:49.361396338-03:00","level":"INFO","msg":"stream: closing","id":"ctt80oev"}
+{"time":"2025-06-15T12:34:49.361620685-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-15T12:34:49.361873107-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-15T12:34:50.598644933-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-15T12:34:51.262160079-03:00","level":"INFO","msg":"handler: closed","stream_id":"ctt80oev"}
+{"time":"2025-06-15T12:34:51.262249408-03:00","level":"INFO","msg":"sender: closed","stream_id":"ctt80oev"}
+{"time":"2025-06-15T12:34:51.262242097-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ctt80oev"}
+{"time":"2025-06-15T12:34:51.263158064-03:00","level":"INFO","msg":"stream: closed","id":"ctt80oev"}

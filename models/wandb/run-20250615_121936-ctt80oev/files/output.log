@@ -1,0 +1,23 @@
+  0%|                                                                                                                                                                                                                                                        | 0/1131 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1131/1131 [15:10<00:00,  1.24it/s]
+Unsloth: Will smartly offload gradients to save VRAM!
+{'loss': 0.9473, 'grad_norm': 0.8868953585624695, 'learning_rate': 0.0001808170515097691, 'epoch': 0.3}
+                                                                                                                                                                                                                                                                                      
+{'eval_loss': 0.736889123916626, 'eval_runtime': 12.0372, 'eval_samples_per_second': 3.489, 'eval_steps_per_second': 3.489, 'epoch': 0.3}
+{'loss': 0.6885, 'grad_norm': 0.5403863191604614, 'learning_rate': 0.0001605683836589698, 'epoch': 0.6}
+{'eval_loss': 0.7171260118484497, 'eval_runtime': 10.9897, 'eval_samples_per_second': 3.822, 'eval_steps_per_second': 3.822, 'epoch': 0.6}
+{'loss': 0.671, 'grad_norm': 0.9335232973098755, 'learning_rate': 0.00014031971580817052, 'epoch': 0.91}
+{'eval_loss': 0.702924370765686, 'eval_runtime': 10.9438, 'eval_samples_per_second': 3.838, 'eval_steps_per_second': 3.838, 'epoch': 0.91}
+{'loss': 0.4569, 'grad_norm': 1.112995982170105, 'learning_rate': 0.00012007104795737122, 'epoch': 1.21}
+{'eval_loss': 0.7723620533943176, 'eval_runtime': 10.956, 'eval_samples_per_second': 3.834, 'eval_steps_per_second': 3.834, 'epoch': 1.21}
+{'loss': 0.3684, 'grad_norm': 0.9283398985862732, 'learning_rate': 9.982238010657194e-05, 'epoch': 1.51}
+{'eval_loss': 0.7401848435401917, 'eval_runtime': 10.9346, 'eval_samples_per_second': 3.841, 'eval_steps_per_second': 3.841, 'epoch': 1.51}
+{'loss': 0.3862, 'grad_norm': 0.5596805214881897, 'learning_rate': 7.957371225577265e-05, 'epoch': 1.81}
+{'eval_loss': 0.7644163966178894, 'eval_runtime': 10.9625, 'eval_samples_per_second': 3.831, 'eval_steps_per_second': 3.831, 'epoch': 1.81}
+{'loss': 0.2912, 'grad_norm': 1.3960040807724, 'learning_rate': 5.932504440497336e-05, 'epoch': 2.12}
+{'eval_loss': 0.933448076248169, 'eval_runtime': 10.9248, 'eval_samples_per_second': 3.844, 'eval_steps_per_second': 3.844, 'epoch': 2.12}
+{'loss': 0.1342, 'grad_norm': 1.001876711845398, 'learning_rate': 3.907637655417407e-05, 'epoch': 2.42}
+{'eval_loss': 0.9554697871208191, 'eval_runtime': 10.9184, 'eval_samples_per_second': 3.847, 'eval_steps_per_second': 3.847, 'epoch': 2.42}
+{'loss': 0.1251, 'grad_norm': 1.7960536479949951, 'learning_rate': 1.882770870337478e-05, 'epoch': 2.72}
+{'eval_loss': 0.9639402031898499, 'eval_runtime': 10.9183, 'eval_samples_per_second': 3.847, 'eval_steps_per_second': 3.847, 'epoch': 2.72}
+{'train_runtime': 912.7514, 'train_samples_per_second': 1.239, 'train_steps_per_second': 1.239, 'train_loss': 0.42049629302492825, 'epoch': 3.0}

@@ -1,0 +1,7 @@
+{"time":"2025-06-09T22:54:29.700396023-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/wandb/run-20250609_225429-2z3pfwiv/logs/debug-core.log"}
+{"time":"2025-06-09T22:54:30.226862231-03:00","level":"INFO","msg":"stream: created new stream","id":"2z3pfwiv"}
+{"time":"2025-06-09T22:54:30.227078134-03:00","level":"INFO","msg":"stream: started","id":"2z3pfwiv"}
+{"time":"2025-06-09T22:54:30.227268354-03:00","level":"INFO","msg":"sender: started","stream_id":"2z3pfwiv"}
+{"time":"2025-06-09T22:54:30.227182429-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"2z3pfwiv"}
+{"time":"2025-06-09T22:54:30.22727856-03:00","level":"INFO","msg":"handler: started","stream_id":"2z3pfwiv"}
+{"time":"2025-06-09T22:54:30.652359202-03:00","level":"INFO","msg":"Starting system monitor"}

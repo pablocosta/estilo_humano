@@ -1,0 +1,40 @@
+ 22%|█████████████████████████████████████████████████████                                                                                                                                                                                        | 253/1131 [03:53<11:52,  1.23it/s]Traceback (most recent call last):
+{'loss': 0.6917, 'grad_norm': 0.3601786196231842, 'learning_rate': 0.0001808170515097691, 'epoch': 0.3}
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/train_qwen.py", line 136, in <module>                                                                                                                                                                               
+{'eval_loss': 0.525232195854187, 'eval_runtime': 10.4549, 'eval_samples_per_second': 4.017, 'eval_steps_per_second': 4.017, 'epoch': 0.3}
+{'loss': 0.4976, 'grad_norm': 0.3564566969871521, 'learning_rate': 0.0001605683836589698, 'epoch': 0.6}
+{'eval_loss': 0.5118951797485352, 'eval_runtime': 10.4814, 'eval_samples_per_second': 4.007, 'eval_steps_per_second': 4.007, 'epoch': 0.6}
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 314, in _fast_inner_training_loop
+  File "<string>", line 77, in _unsloth_training_step
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/accelerator.py", line 2454, in backward
+    loss.backward(**kwargs)
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/train_qwen.py", line 136, in <module>
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 314, in _fast_inner_training_loop
+  File "<string>", line 77, in _unsloth_training_step
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/accelerator.py", line 2454, in backward
+    loss.backward(**kwargs)
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

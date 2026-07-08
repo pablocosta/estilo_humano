@@ -1,0 +1,53 @@
+ 11%|██████████████████████████▍                                                                                                                                                                                                                  | 126/1131 [02:04<17:04,  1.02s/it]Traceback (most recent call last):
+Unsloth: Will smartly offload gradients to save VRAM!
+{'loss': 0.7858, 'grad_norm': 0.39254021644592285, 'learning_rate': 0.0001808170515097691, 'epoch': 0.3}
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/train_qwen.py", line 136, in <module>                                                                                                                                                                               
+{'eval_loss': 0.6215153336524963, 'eval_runtime': 11.195, 'eval_samples_per_second': 3.752, 'eval_steps_per_second': 3.752, 'epoch': 0.3}
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 314, in _fast_inner_training_loop
+  File "<string>", line 77, in _unsloth_training_step
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/accelerator.py", line 2454, in backward
+    loss.backward(**kwargs)
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/train_qwen.py", line 136, in <module>
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 314, in _fast_inner_training_loop
+  File "<string>", line 77, in _unsloth_training_step
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/accelerator.py", line 2454, in backward
+    loss.backward(**kwargs)
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x7633bd3e0680>
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/wandb/sdk/lib/service_connection.py", line 90, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/wandb/sdk/lib/service_connection.py", line 218, in teardown
+    self._router.join()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:

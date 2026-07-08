@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/prompt_v1/train_magistral.py", line 124, in <module>
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 223, in _fast_inner_training_loop
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer_callback.py", line 506, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer_callback.py", line 556, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer_callback.py", line 755, in on_train_begin
+    assert args.eval_strategy != IntervalStrategy.NO, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: EarlyStoppingCallback requires IntervalStrategy of steps or epoch
+Traceback (most recent call last):
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/prompt_v1/train_magistral.py", line 124, in <module>
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 223, in _fast_inner_training_loop
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer_callback.py", line 506, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer_callback.py", line 556, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer_callback.py", line 755, in on_train_begin
+    assert args.eval_strategy != IntervalStrategy.NO, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: EarlyStoppingCallback requires IntervalStrategy of steps or epoch

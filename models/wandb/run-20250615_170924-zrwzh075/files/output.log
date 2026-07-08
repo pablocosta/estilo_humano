@@ -1,0 +1,26 @@
+ 10%|███████████████████████▉                                                                                                                                                                                                                      | 114/1131 [00:25<03:11,  5.32it/s]/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error (ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 6a582f31-600c-4dfc-bd1d-b99a4ba84229)') - silently ignoring the lookup for the file config.json in unsloth/llama-3-8b-Instruct-bnb-4bit.
+Unsloth: Will smartly offload gradients to save VRAM!
+{'loss': 0.8875, 'grad_norm': 0.9784820675849915, 'learning_rate': 0.0001808170515097691, 'epoch': 0.3}
+  warnings.warn(                                                                                                                                                                                                                                                                      
+{'eval_loss': 0.7482154369354248, 'eval_runtime': 2.6892, 'eval_samples_per_second': 15.618, 'eval_steps_per_second': 15.618, 'epoch': 0.3}
+/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in unsloth/llama-3-8b-Instruct-bnb-4bit - will assume that the vocabulary was not modified.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1131/1131 [04:28<00:00,  4.22it/s]
+{'loss': 0.7231, 'grad_norm': 1.1662334203720093, 'learning_rate': 0.0001605683836589698, 'epoch': 0.6}
+                                                                                                                                                                                                                                                                                      
+{'eval_loss': 0.7271892428398132, 'eval_runtime': 2.6921, 'eval_samples_per_second': 15.601, 'eval_steps_per_second': 15.601, 'epoch': 0.6}
+{'loss': 0.7092, 'grad_norm': 1.106615662574768, 'learning_rate': 0.00014031971580817052, 'epoch': 0.91}
+{'eval_loss': 0.7258020043373108, 'eval_runtime': 2.6939, 'eval_samples_per_second': 15.591, 'eval_steps_per_second': 15.591, 'epoch': 0.91}
+{'loss': 0.4967, 'grad_norm': 1.5627950429916382, 'learning_rate': 0.00012007104795737122, 'epoch': 1.21}
+{'eval_loss': 0.7707985639572144, 'eval_runtime': 2.7029, 'eval_samples_per_second': 15.539, 'eval_steps_per_second': 15.539, 'epoch': 1.21}
+{'loss': 0.4133, 'grad_norm': 1.0465794801712036, 'learning_rate': 9.982238010657194e-05, 'epoch': 1.51}
+{'eval_loss': 0.7459355592727661, 'eval_runtime': 2.6917, 'eval_samples_per_second': 15.604, 'eval_steps_per_second': 15.604, 'epoch': 1.51}
+{'loss': 0.4315, 'grad_norm': 0.6548160910606384, 'learning_rate': 7.957371225577265e-05, 'epoch': 1.81}
+{'eval_loss': 0.7539736032485962, 'eval_runtime': 2.6949, 'eval_samples_per_second': 15.585, 'eval_steps_per_second': 15.585, 'epoch': 1.81}
+{'loss': 0.3382, 'grad_norm': 1.0811103582382202, 'learning_rate': 5.932504440497336e-05, 'epoch': 2.12}
+{'eval_loss': 0.8371559977531433, 'eval_runtime': 2.6992, 'eval_samples_per_second': 15.56, 'eval_steps_per_second': 15.56, 'epoch': 2.12}
+{'loss': 0.196, 'grad_norm': 0.8191251158714294, 'learning_rate': 3.907637655417407e-05, 'epoch': 2.42}
+{'eval_loss': 0.8600092530250549, 'eval_runtime': 2.696, 'eval_samples_per_second': 15.579, 'eval_steps_per_second': 15.579, 'epoch': 2.42}
+{'loss': 0.1716, 'grad_norm': 1.8752514123916626, 'learning_rate': 1.882770870337478e-05, 'epoch': 2.72}
+{'eval_loss': 0.8672537207603455, 'eval_runtime': 2.6976, 'eval_samples_per_second': 15.569, 'eval_steps_per_second': 15.569, 'epoch': 2.72}
+{'train_runtime': 272.5157, 'train_samples_per_second': 4.15, 'train_steps_per_second': 4.15, 'train_loss': 0.45452874113668074, 'epoch': 3.0}

@@ -1,0 +1,22 @@
+ 10%|███████████████████████▉                                                                                                                                                                                                                      | 114/1131 [00:25<03:14,  5.24it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'attn_factor'}
+Unsloth: Will smartly offload gradients to save VRAM!
+{'loss': 1.0466, 'grad_norm': 0.9699452519416809, 'learning_rate': 0.0001808170515097691, 'epoch': 0.3}
+ 20%|███████████████████████████████████████████████▉                                                                                                                                                                                              | 228/1131 [00:55<02:51,  5.27it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'attn_factor'}
+{'eval_loss': 0.8847106695175171, 'eval_runtime': 2.645, 'eval_samples_per_second': 15.879, 'eval_steps_per_second': 15.879, 'epoch': 0.3}
+{'loss': 0.8488, 'grad_norm': 0.48553466796875, 'learning_rate': 0.0001605683836589698, 'epoch': 0.6}
+ 30%|███████████████████████████████████████████████████████████████████████▉                                                                                                                                                                      | 342/1131 [01:23<02:34,  5.11it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'attn_factor'}
+{'eval_loss': 0.8623164892196655, 'eval_runtime': 2.6358, 'eval_samples_per_second': 15.935, 'eval_steps_per_second': 15.935, 'epoch': 0.6}
+{'loss': 0.8281, 'grad_norm': 0.9021844863891602, 'learning_rate': 0.00014031971580817052, 'epoch': 0.91}
+ 40%|███████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                              | 456/1131 [01:52<02:08,  5.25it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'attn_factor'}
+{'eval_loss': 0.8575189709663391, 'eval_runtime': 2.638, 'eval_samples_per_second': 15.921, 'eval_steps_per_second': 15.921, 'epoch': 0.91}
+{'loss': 0.6205, 'grad_norm': 1.5285054445266724, 'learning_rate': 0.00012007104795737122, 'epoch': 1.21}
+ 50%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                      | 570/1131 [02:20<01:52,  5.00it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'attn_factor'}
+{'eval_loss': 0.9054386615753174, 'eval_runtime': 2.6226, 'eval_samples_per_second': 16.015, 'eval_steps_per_second': 16.015, 'epoch': 1.21}
+{'loss': 0.5257, 'grad_norm': 1.1458477973937988, 'learning_rate': 9.982238010657194e-05, 'epoch': 1.51}
+ 60%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                              | 684/1131 [02:49<01:26,  5.17it/s]Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'attn_factor'}
+{'eval_loss': 0.8848118782043457, 'eval_runtime': 2.6388, 'eval_samples_per_second': 15.917, 'eval_steps_per_second': 15.917, 'epoch': 1.51}
+{'loss': 0.5525, 'grad_norm': 0.7549098134040833, 'learning_rate': 7.957371225577265e-05, 'epoch': 1.81}
+ 60%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                              | 684/1131 [02:52<01:52,  3.96it/s]
+{'eval_loss': 0.897553026676178, 'eval_runtime': 2.639, 'eval_samples_per_second': 15.915, 'eval_steps_per_second': 15.915, 'epoch': 1.81}
+{'train_runtime': 174.4534, 'train_samples_per_second': 6.483, 'train_steps_per_second': 6.483, 'train_loss': 0.7370522203501205, 'epoch': 1.81}
+Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'attn_factor'}

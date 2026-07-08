@@ -1,0 +1,150 @@
+ 10%|███████████████████████▉                                                                                                                                                                                                                     | 114/1131 [01:33<14:07,  1.20it/s]Traceback (most recent call last):
+Unsloth: Will smartly offload gradients to save VRAM!
+{'loss': 0.788, 'grad_norm': 0.40394049882888794, 'learning_rate': 0.0001808170515097691, 'epoch': 0.3}
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/train_qwen.py", line 135, in <module>████████████████████████████████████████████████████████▎                                                                                       | 7/11 [00:04<00:02,  1.54it/s]
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 381, in _fast_inner_training_loop
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 3096, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 3045, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 4154, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 4348, in evaluation_loop
+    losses, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 4564, in prediction_step
+    loss, outputs = self.compute_loss(model, inputs, return_outputs=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/unsloth_compiled_cache/UnslothSFTTrainer.py", line 748, in compute_loss
+    outputs = super().compute_loss(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/unsloth/models/_utils.py", line 1029, in _unsloth_pre_compute_loss
+    outputs = self._old_compute_loss(model, inputs, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 814, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 802, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 781, in convert_to_fp32
+    return recursively_apply(_convert_to_fp32, tensor, test_type=_is_fp16_bf16_tensor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 118, in recursively_apply
+    {
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 119, in <dictcomp>
+    k: recursively_apply(
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 107, in recursively_apply
+    return honor_type(
+           ^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 81, in honor_type
+    return type(obj)(generator)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 110, in <genexpr>
+    recursively_apply(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 107, in recursively_apply
+    return honor_type(
+           ^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 81, in honor_type
+    return type(obj)(generator)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 110, in <genexpr>
+    recursively_apply(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 126, in recursively_apply
+    return func(data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 773, in _convert_to_fp32
+    return tensor.float()
+           ^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 22.02 GiB of which 28.44 MiB is free. Including non-PyTorch memory, this process has 21.72 GiB memory in use. Of the allocated memory 21.07 GiB is allocated by PyTorch, and 166.15 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/train_qwen.py", line 135, in <module>
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 381, in _fast_inner_training_loop
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 3096, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 3045, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 4154, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 4348, in evaluation_loop
+    losses, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 4564, in prediction_step
+    loss, outputs = self.compute_loss(model, inputs, return_outputs=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/unsloth_compiled_cache/UnslothSFTTrainer.py", line 748, in compute_loss
+    outputs = super().compute_loss(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/unsloth/models/_utils.py", line 1029, in _unsloth_pre_compute_loss
+    outputs = self._old_compute_loss(model, inputs, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 814, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 802, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 781, in convert_to_fp32
+    return recursively_apply(_convert_to_fp32, tensor, test_type=_is_fp16_bf16_tensor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 118, in recursively_apply
+    {
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 119, in <dictcomp>
+    k: recursively_apply(
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 107, in recursively_apply
+    return honor_type(
+           ^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 81, in honor_type
+    return type(obj)(generator)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 110, in <genexpr>
+    recursively_apply(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 107, in recursively_apply
+    return honor_type(
+           ^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 81, in honor_type
+    return type(obj)(generator)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 110, in <genexpr>
+    recursively_apply(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 126, in recursively_apply
+    return func(data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/utils/operations.py", line 773, in _convert_to_fp32
+    return tensor.float()
+           ^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 22.02 GiB of which 28.44 MiB is free. Including non-PyTorch memory, this process has 21.72 GiB memory in use. Of the allocated memory 21.07 GiB is allocated by PyTorch, and 166.15 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

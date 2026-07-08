@@ -1,0 +1,60 @@
+  0%|                                                                                                                                                                                                                                                        | 0/1131 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+ 42%|██████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                           | 470/1131 [06:13<08:00,  1.37it/s]Traceback (most recent call last):
+Unsloth: Will smartly offload gradients to save VRAM!
+{'loss': 0.9854, 'grad_norm': 1.498557209968567, 'learning_rate': 0.0001808170515097691, 'epoch': 0.3}
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/prompt_v1/train_gemma.py", line 123, in <module>                                                                                                                                                                     
+{'eval_loss': 0.8279057741165161, 'eval_runtime': 12.0966, 'eval_samples_per_second': 3.472, 'eval_steps_per_second': 3.472, 'epoch': 0.3}
+{'loss': 0.7818, 'grad_norm': 0.997883141040802, 'learning_rate': 0.0001605683836589698, 'epoch': 0.6}
+{'eval_loss': 0.8141717314720154, 'eval_runtime': 10.9421, 'eval_samples_per_second': 3.838, 'eval_steps_per_second': 3.838, 'epoch': 0.6}
+{'loss': 0.7656, 'grad_norm': 1.8079458475112915, 'learning_rate': 0.00014031971580817052, 'epoch': 0.91}
+{'eval_loss': 0.803128182888031, 'eval_runtime': 10.9667, 'eval_samples_per_second': 3.83, 'eval_steps_per_second': 3.83, 'epoch': 0.91}
+{'loss': 0.4979, 'grad_norm': 1.9130650758743286, 'learning_rate': 0.00012007104795737122, 'epoch': 1.21}
+{'eval_loss': 0.8681216239929199, 'eval_runtime': 10.9464, 'eval_samples_per_second': 3.837, 'eval_steps_per_second': 3.837, 'epoch': 1.21}
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 315, in _fast_inner_training_loop
+  File "<string>", line 77, in _unsloth_training_step
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/accelerator.py", line 2454, in backward
+    loss.backward(**kwargs)
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/A006DFF106DFC706/doutorado/nlg/estilo_humano/models/prompt_v1/train_gemma.py", line 123, in <module>
+    trainer.train()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 315, in _fast_inner_training_loop
+  File "<string>", line 77, in _unsloth_training_step
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/accelerate/accelerator.py", line 2454, in backward
+    loss.backward(**kwargs)
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x724e915cb2e0>
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/wandb/sdk/lib/service_connection.py", line 90, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/wandb/sdk/lib/service_connection.py", line 218, in teardown
+    self._router.join()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/pablo/miniconda3/envs/unsloth/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:

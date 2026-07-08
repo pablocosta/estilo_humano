@@ -1,0 +1,16 @@
+ 60%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                              | 684/1131 [02:46<01:48,  4.12it/s]
+Unsloth: Will smartly offload gradients to save VRAM!
+{'loss': 0.9456, 'grad_norm': 2.320535659790039, 'learning_rate': 0.0001808170515097691, 'epoch': 0.3}
+                                                                                                                                                                                                                                                                                      
+{'eval_loss': 0.8210835456848145, 'eval_runtime': 2.6679, 'eval_samples_per_second': 15.743, 'eval_steps_per_second': 15.743, 'epoch': 0.3}
+{'loss': 0.794, 'grad_norm': 2.7683887481689453, 'learning_rate': 0.0001605683836589698, 'epoch': 0.6}
+{'eval_loss': 0.801628589630127, 'eval_runtime': 2.623, 'eval_samples_per_second': 16.012, 'eval_steps_per_second': 16.012, 'epoch': 0.6}
+{'loss': 0.7807, 'grad_norm': 2.10347843170166, 'learning_rate': 0.00014031971580817052, 'epoch': 0.91}
+{'eval_loss': 0.793364942073822, 'eval_runtime': 2.6524, 'eval_samples_per_second': 15.835, 'eval_steps_per_second': 15.835, 'epoch': 0.91}
+{'loss': 0.53, 'grad_norm': 2.642033100128174, 'learning_rate': 0.00012007104795737122, 'epoch': 1.21}
+{'eval_loss': 0.8545201420783997, 'eval_runtime': 2.6263, 'eval_samples_per_second': 15.992, 'eval_steps_per_second': 15.992, 'epoch': 1.21}
+{'loss': 0.4272, 'grad_norm': 1.8106739521026611, 'learning_rate': 9.982238010657194e-05, 'epoch': 1.51}
+{'eval_loss': 0.8123305439949036, 'eval_runtime': 2.6511, 'eval_samples_per_second': 15.842, 'eval_steps_per_second': 15.842, 'epoch': 1.51}
+{'loss': 0.4539, 'grad_norm': 1.079960584640503, 'learning_rate': 7.957371225577265e-05, 'epoch': 1.81}
+{'eval_loss': 0.8241993188858032, 'eval_runtime': 2.6261, 'eval_samples_per_second': 15.993, 'eval_steps_per_second': 15.993, 'epoch': 1.81}
+{'train_runtime': 167.6866, 'train_samples_per_second': 6.745, 'train_steps_per_second': 6.745, 'train_loss': 0.655219697115714, 'epoch': 1.81}
